@@ -7,7 +7,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'TechForge Solutions | Enterprise Software Consultancy',
+  title: 'Favlinksoftware | Enterprise Software Consultancy',
   description: 'Enterprise-grade software solutions, AI integration, and infrastructure optimization',
 };
 

@@ -4,15 +4,16 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, Code2, Cpu, Users, Briefcase } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { SiHbo } from 'react-icons/si';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: 'Services', href: '#services', icon: Code2 },
-    { name: 'Projects', href: '#projects', icon: Cpu },
-    { name: 'Clients', href: '#clients', icon: Users },
-    { name: 'Contact', href: '#contact', icon: Briefcase },
+    { name: 'Services', href: '#services'  },
+    { name: 'Projects', href: '#projects' },
+    // { name: 'Clients', href: '#clients'  },
+    { name: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -21,8 +22,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center space-x-2">
-              <Code2 className="h-8 w-8" />
-              <span className="font-bold text-xl">TechForge</span>
+              {/* <SiHbo className="h-8 w-8" /> */}
+              <span className="font-bold text-xl">Favlinksoftware</span>
             </Link>
           </div>
 
@@ -71,7 +72,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
               >
                 <div className="flex items-center space-x-2">
-                  <item.icon className="h-5 w-5" />
+                  <div className="h-5 w-5" />
                   <span>{item.name}</span>
                 </div>
               </Link>

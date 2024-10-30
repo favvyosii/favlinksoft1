@@ -3,31 +3,48 @@ import { Brain, Cloud, Cog, Code2, Cpu, Database, MessageSquare } from "lucide-r
 import Image from "next/image";
 import HeroSection from "@/components/HeroSection";
 import ContactForm from "@/components/ContactForm";
+import { TbBrandNextjs } from "react-icons/tb";
+import { FaNodeJs } from "react-icons/fa";
+import { FaPython } from "react-icons/fa6";
+import { SiFlask } from "react-icons/si";
+import { SiGooglegemini } from "react-icons/si";
+import { SiOpenai } from "react-icons/si";
+import { SiAnthropic } from "react-icons/si";
+import { FaAws } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaCloud } from "react-icons/fa";
+import { TbSettingsAutomation } from "react-icons/tb";
 
 export default function Home() {
   const services = [
     {
-      icon: <Cloud className="h-12 w-12 text-[#1c7293]" />,
+      icon: <FaCloud className="h-12 w-12 text-[#1c7293]" />,
       title: "Infrastructure Solutions",
       description: "Scalable cloud architecture and deployment strategies for enterprise applications"
     },
     {
-      icon: <Brain className="h-12 w-12 text-[#1c7293]" />,
+      icon: <SiGooglegemini className="h-12 w-12 text-[#1c7293]" />,
       title: "AI Integration",
       description: "Seamless integration of ChatGPT, Anthropic, and Gemini AI into existing systems"
     },
     {
-      icon: <Cog className="h-12 w-12 text-[#1c7293]" />,
+      icon: <TbSettingsAutomation className="h-12 w-12 text-[#1c7293]" />,
       title: "Process Automation",
       description: "Custom automation solutions using Python and advanced technologies"
     }
   ];
 
   const techStack = [
-    { icon: <Code2 />, name: "Next.js" },
-    { icon: <Cpu />, name: "Node.js" },
-    { icon: <Database />, name: "Python" },
-    { icon: <MessageSquare />, name: "AI Integration" }
+    { icon: <TbBrandNextjs />, name: "Next.js" },
+    { icon: <FaNodeJs />, name: "Node.js" },
+    { icon: <FaPython /> , name: "Python" },
+    { icon: <SiFlask /> , name: "Flask" },
+    { icon: <SiOpenai />, name: "Chatgpt" },
+    { icon: <SiGooglegemini />, name: "Gemini" },
+    { icon: <SiAnthropic />, name: "Anthropic" },
+    { icon: <FaAws />, name: "AWS" },
   ];
 
   return (
@@ -127,31 +144,33 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">TechForge Solutions</h3>
+              <h3 className="text-xl font-bold mb-4">Favlinksoftware</h3>
               <p className="text-gray-300">Transforming businesses through technology</p>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">Contact</h3>
-              <p className="text-gray-300">info@techforge.com</p>
-              <p className="text-gray-300">+1 (555) 123-4567</p>
+              {/* <p className="text-gray-300">info@techforge.com</p> */}
+              <a href="mailto:favlinkdev@gmail.com">Send an email!</a>
+              <p className="text-gray-300">+2349068611553</p>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">Follow Us</h3>
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-300 hover:text-white">
-                  LinkedIn
+                <FaLinkedinIn  size={30} />
                 </a>
                 <a href="#" className="text-gray-300 hover:text-white">
-                  Twitter
+                <FaXTwitter size={30} />
                 </a>
                 <a href="#" className="text-gray-300 hover:text-white">
-                  GitHub
+                <FaGithub  size={30}/>
                 </a>
+            
               </div>
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-300">
-            <p>&copy; 2024 TechForge Solutions. All rights reserved.</p>
+            <p>&copy; 2024 Favlinksoftware. All rights reserved.</p>
           </div>
         </div>
       </footer>
